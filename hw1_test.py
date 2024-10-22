@@ -35,13 +35,13 @@ class TestCases(unittest.TestCase):
         self.assertEqual(expected,result)
 
     # Part 3
-    def test_ascending_pairs(self):
+    def test_ascending_pairs_1(self):
         input = [[5,1,6],[5,1],[],[3,67,1,8],[-6,8]]
         result = hw1.ascending_pairs(input)
         expected = [[5,1,6],[1,5],[],[3,67,1,8],[-6,8]]
         self.assertEqual(expected,result)
 
-    def test_ascending_pairs(self):
+    def test_ascending_pairs_2(self):
         input = [[6,1],[2,6,8,2,3],[2,-1],[5,3,1,6],[-15,5]]
         result = hw1.ascending_pairs(input)
         expected = [[1,6],[2,6,8,2,3],[-1,2],[5,3,1,6],[-15,5]]
@@ -116,7 +116,7 @@ class TestCases(unittest.TestCase):
         expected = ["Charles", "Bobby"]
         self.assertEqual(expected, result)
 
-    def test_below_pay_average_1(self):
+    def test_below_pay_average_2(self):
         input = [data.Employee("Cash", 30000),
                  data.Employee("Donnie", 40000),
                  data.Employee("Lucas", 30000),
