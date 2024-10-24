@@ -1,9 +1,9 @@
 import data
+import math
 from data import Rectangle
 
 
 # Write your functions for each part in the space below.
-
 # Part 1
 def vowel_count(word:str) -> int:
     count = 0
@@ -69,13 +69,8 @@ def circle_bound(rectangle1:data.Rectangle) -> data.Circle:
     x2 = rectangle1.top_left.x
     y1 = rectangle1.top_left.y
     y2 = rectangle1.bottom_right.y
-    width = x1 - x2
-    length = y1 - y2
-    radius = 0
-    if width < length:
-        radius = width / 2
-    else:
-        radius = length / 2
+    hypotenuse = math.sqrt(pow(x1-x2,2)+pow(y1-y2,2))
+    radius = round(hypotenuse/2,2)
     center = data.Point((x1 + x2)/2, (y1 + y2)/2)
     return data.Circle(center, radius)
 

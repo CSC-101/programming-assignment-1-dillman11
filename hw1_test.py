@@ -97,13 +97,13 @@ class TestCases(unittest.TestCase):
     def test_circle_bound_1(self):
         input = data.Rectangle(data.Point(5, 16), data.Point(12, 10))
         result = hw1.circle_bound(input)
-        expected = data.Circle(data.Point(8.5, 13.0), 3.0)
+        expected = data.Circle(data.Point(8.5, 13.0), 4.61)
         self.assertEqual(expected, result)
 
     def test_circle_bound_2(self):
         input = data.Rectangle(data.Point(-10, 56), data.Point(15, 12))
         result = hw1.circle_bound(input)
-        expected = data.Circle(data.Point(2.5, 34.0), 12.5)
+        expected = data.Circle(data.Point(2.5, 34.0), 25.3)
         self.assertEqual(expected, result)
 
     # Part 8
